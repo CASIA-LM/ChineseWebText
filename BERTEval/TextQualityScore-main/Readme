@@ -1,0 +1,46 @@
+# 基于BERT的数据质量过滤
+
+
+
+环境依赖
+
+```
+scikit-learn==1.3.0
+transformers==4.31.0
+tqdm 
+scipy==1.11.1
+numpy==1.24.3
+pytorch==2.0.1
+```
+
+使用方法
+
+- step1 将之前处理过得ccnet切分为多个shard，每个shard为json文件，单个快照的所有shard存放于同一路径，示例`util/text_separate.py`
+
+- step2 运行 python 推理脚本`pred.py`，对每个文本以换行符 $\n$ 或句号等标识符切分为长度为最大512的完整段落。对每个段落预测文本质量评分，其中可以修改`config/pred_config.json`来进行配置，关键参数如下
+
+  ```json
+  "data_path": ccnet数据路径
+  "output_path": 评分后数据的存放路径
+  "num_workers": 数据预处理cpu进程
+  "batch_size": bert batch size
+  "checkpoint": 模型
+  ```
+
+  其余参数不需要修改，处理完后，
+
+- step3 设定阈值 $T$，保留数据质量阈值大于 $T$的文本，对于同一文本中连续阈值大于 $T$的段落，程序会自动对其进行拼接。该功能由为
+
+  `utils/util.py`中的函数`text_select_with_pred(file, score_threshold)`实现
+
+  使用方法如下:
+
+  ```python
+  file = "test\data\cleared0_0000.jsonl"
+  score_threshold = 0.99
+      
+  selected_data = text_select_with_pred(file, score_threshold)
+  ```
+
+  
+

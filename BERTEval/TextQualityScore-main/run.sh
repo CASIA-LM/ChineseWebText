@@ -1,0 +1,1 @@
+/home/share/tianxin/anaconda3/envs/llama_pytorch_20/bin/python pretrain_data_proce.py  > data_prcoess.log 2>&1 
