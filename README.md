@@ -216,7 +216,7 @@ In preprocessing procedure, we have used some handcrafted rules to remove the ex
 
 ### 2. FastText Training and Inference
 
-We provide our FastText training data examples and training script in folder **"fasttext"**. You can download our trained FastText model [here]() and replace the existing file located at **"./fasttext/output/model.bin"**.
+We provide our FastText training data examples and training script in folder **"fasttext"**. You can download our trained FastText model [here](https://huggingface.co/CASIA-LM/ChineseWebText-fasttext) and replace the existing file located at **"./fasttext/output/model.bin"**.
 
 ```shell
 cd fasttext
