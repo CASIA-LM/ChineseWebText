@@ -1,6 +1,6 @@
 # ChineseWebText: Large-Scale High-quality Chinese Web Text Extracted with Effective Evaluation Model
 
-This directory contains the ChineseWebText dataset, and the EvalWeb tool-chain to process CommonCrawl Data for high-quality chinese data. Our ChineseWebText dataset is publicly available on [here](https://huggingface.co/datasets/CASIA-LM/ChineseWebText).
+This directory contains the ChineseWebText dataset, and the EvalWeb tool-chain to process CommonCrawl Data for high-quality chinese data. Our ChineseWebText dataset is publicly available on [huggingface](https://huggingface.co/datasets/CASIA-LM/ChineseWebText).
 
 ## ChineseWebText
 
@@ -234,3 +234,6 @@ python main.py --mode test --dates 2023-06 2023-14
 ```
 
 > This step will assign a FastText score to each data entry, with the results being stored in a directory such as **"./2023-06/remain/fasttext"**. Subsequently, you can utilize these scores to filter and extract high-quality data by using a threshold(default set to 0.5).
+
+## Citation
+
