@@ -239,7 +239,7 @@ python main.py --mode test --dates 2023-06 2023-14
 
 Please cite the paper if you use the data or code in this repo.
 ```shell
-   @misc{chen2023chinesewebtext,
+@misc{chen2023chinesewebtext,
       title={Chinesewebtext: Large-scale high-quality Chinese web text extracted with effective evaluation model}, 
       author={Jianghao Chen and Pu Jian and Tengxiao Xi and Yidong Yi and Chenglin Ding and Qianlong Du and Guibo Zhu and Chengqing Zong and Jinqiao Wang and Jiajun Zhang},
       year={2023},
