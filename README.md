@@ -1,6 +1,6 @@
 # ChineseWebText: Large-Scale High-quality Chinese Web Text Extracted with Effective Evaluation Model
 
-This directory contains the ChineseWebText dataset, and the EvalWeb tool-chain to process CommonCrawl Data for high-quality chinese data. Our ChineseWebText dataset is publicly available on huggingface.[(here)]https://huggingface.co/datasets/CASIA-LM/ChineseWebText).
+This directory contains the ChineseWebText dataset, and the EvalWeb tool-chain to process CommonCrawl Data for high-quality chinese data. Our ChineseWebText dataset is publicly available on huggingface.[(here)](https://huggingface.co/datasets/CASIA-LM/ChineseWebText).
 
 ## ChineseWebText
 
