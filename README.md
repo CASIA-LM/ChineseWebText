@@ -98,27 +98,18 @@ fasttext==0.9.2
 }
 ```
 
-#### 2. Filter using blacklist and regular expression matching.
+#### 2. Splitting data and merging into jsonl files.
 
-- run python clear_ccnet.py
+- run python merge2jsonl.py
 
 ```sh
-python clear_ccnet.py --source /mnt/data/ccnet_clean/cc_net/data/mined_split/2023-23 --target /mnt/data/cc_cleaned
-# --source directory of cleaned data after the first step 
-# --target directory of data filtered by blacklist and regular expression matching
+python merge2jsonl.py --source /mnt/data/ccnet_clean/cc_net/data/mined_split/2023-23 --target /mnt/data/cc_cleaned/2023-23
 ```
 
 - outputs:
 
 ```sh
 cleared*.jsonl
-cleared_dirty*.jsonl
-```
-
-- compress files
-
-```sh
-tar -czvf ccnet-2023-23.tar.gz 2023-23
 ```
 
 ### Stage 2:  Preprocessing
