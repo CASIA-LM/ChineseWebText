@@ -231,8 +231,8 @@ Please cite the paper if you use the data or code in this repo.
 
 ```shell
 @misc{chen2023chinesewebtext,
-      title={Chinesewebtext: Large-scale high-quality Chinese web text extracted with effective evaluation model}, 
-      author={Jianghao Chen and Pu Jian and Tengxiao Xi and Yidong Yi and Chenglin Ding and Qianlong Du and Guibo Zhu and Chengqing Zong and Jinqiao Wang and Jiajun Zhang},
+      title={ChineseWebText: Large-scale High-quality Chinese Web Text Extracted with Effective Evaluation Model}, 
+      author={Jianghao Chen and Pu Jian and Tengxiao Xi and Dongyi Yi and Qianlong Du and Chenglin Ding and Guibo Zhu and Chengqing Zong and Jinqiao Wang and Jiajun Zhang},
       year={2023},
       eprint={2311.01149},
       archivePrefix={arXiv},
